@@ -8,5 +8,4 @@ class Solution:
         newString = ''
         for word in string:
             newString += word[::-1] + '.'
-            continue
         return newString[:len(newString)-1]
