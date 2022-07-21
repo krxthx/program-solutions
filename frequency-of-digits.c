@@ -17,9 +17,12 @@ int main ()
   for(int i=0;i<n;i++){
       b[a[i]]++;
   }
+ 
    for(int i=0;i<=9;i++){
-      printf("\n%d = ",i);
-      printf("%d times",b[i]);
+      if(b[i]!=0){
+          printf("\n%d has occurred ",i);
+          printf("%d time(s)",b[i]);
+      }
   }
   return 0;
 }
