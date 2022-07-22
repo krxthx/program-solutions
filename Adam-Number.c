@@ -16,6 +16,12 @@ int main()
     int n;
     scanf("%d",&n);
     int rev = reverse(n);
-    ((reverse(rev*rev)==(n*n))&&(reverse(n*n)==(rev*rev)))?printf("Adam number"):printf("Not an Adam number");
+    (reverse(rev*rev)==(n*n))?printf("Adam number"):printf("Not an Adam number");
     return 0;
 }
+
+// ip: 12
+// op: Adam number
+
+// ip: 15
+// op: Not an Adam number
