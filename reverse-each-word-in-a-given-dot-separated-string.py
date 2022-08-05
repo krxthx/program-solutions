@@ -4,8 +4,4 @@
 
 class Solution:
     def reverseWords(self, s):
-        string = s.split(".")
-        newString = ''
-        for word in string:
-            newString += word[::-1] + '.'
-        return newString[:len(newString)-1]
+        return " ".join(reversed(s.split(".")))
