@@ -10,12 +10,5 @@
 
 
 def reverseWords(self, s: str) -> str:
-    return " ".join(w for w in s.split()[::-1] if w != "") #No extra space
-    
-def reverseWords(self, s: str) -> str:
-    s = s.split(" ")
-    s.reverse()
-    newString = ''
-    for word in s:
-    newString += word+' '
-    return " ".join(newString.split()) #Takes Extra Space
+    return " ".join(reversed(s.split())) #No extra space
+   
