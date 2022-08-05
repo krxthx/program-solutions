@@ -4,8 +4,4 @@
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-        s, t = sorted(s), sorted(t)
-        if s==t:
-            return True
-        else:
-            return False
+        return Counter(s) == Counter(t)
